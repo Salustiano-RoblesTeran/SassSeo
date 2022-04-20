@@ -1,0 +1,23 @@
+{
+  "name": "aplicandosass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salustiano-RoblesTeran/aplicandoSass.git"
+  },
+  "author": "Salustiano Robles teran <saluroblesteran@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salustiano-RoblesTeran/aplicandoSass/issues"
+  },
+  "homepage": "https://github.com/Salustiano-RoblesTeran/aplicandoSass#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
