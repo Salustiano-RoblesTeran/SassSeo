@@ -13,9 +13,11 @@
 .subnav {
     background-color: #fbfbfd;
     .subitem {
-        color: #303030;
-    &:hover {
-        color: #0065cc;
+        a{
+            color: #303030;
+        &:hover {
+            color: #0065cc;
+        }
     }
 }
 }
@@ -28,6 +30,11 @@ h2 {
     font-size: 26px;
     margin-top: 25px;
     padding: 10px;
+}
+
+.new {
+    color: $textoSecundario;
+    margin-top: 100px;
 }
 
 a {
