@@ -1,0 +1,43 @@
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:14s0px;
+    width:100%;
+    background:#f5f5f7;
+
+    li {
+        list-style: none;
+        padding: 5px;
+
+        a {
+            color: #303030;
+            font-size: 12px;
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .formulario {
+        display: relative;
+        left: 10px;
+    }
+
+    input {
+        margin-left: 20px;
+        width: 200px;
+        height: 40px;
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid $colorPrincipal   ;
+        border-radius: 10px ;
+    }
+}
+

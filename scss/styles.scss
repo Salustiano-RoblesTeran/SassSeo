@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import "variables";
+
+@import "header";
+@import "footer";
+
+
+.subnav {
+    background-color: #fbfbfd;
+    .subitem {
+        color: #303030;
+    &:hover {
+        color: #0065cc;
+    }
+}
+}
+
+main {
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration:underline;
+    }
+}
+
+img {  
+    width: 460px;
+    margin-top: 60px;
+}
+
