@@ -1,9 +1,19 @@
+// Creamos una mapa para darle los colores a los iconos
+
+$redes: (
+    twitter: #55ACEE,
+    facebook: #3A5795,
+    instagram: #ee784c
+);
+
+
 footer {
+    display: flex;
     position:fixed;
+    justify-content: space-between;
     left:0px;
     bottom:0px;
-    height:14s0px;
-    width:100%;
+    @include dimensiones (100%, 140px);
     background:#f5f5f7;
 
     li {
@@ -17,27 +27,45 @@ footer {
     }
 
     p {
+        display: flex;
+        align-items: flex-end;
         text-align: center;
         margin-bottom: 15px;
     }
 
     .formulario {
-        display: relative;
+        display: flex;
+        align-items: center;
         left: 10px;
     }
 
     input {
         margin-left: 20px;
-        width: 200px;
-        height: 40px;
+        @include dimensiones (200px, 40px);
     }
 
     button {
-        width: 100px;
-        height: 40px;
+        @include dimensiones (100px, 40px);
         background-color: #fff;
         border: 1px solid $colorPrincipal   ;
         border-radius: 10px ;
+    }
+
+    .social {
+        display: flex;
+        margin: auto;
+    }
+
+    .social i {
+        padding: 10px;
+    }
+
+
+    /* Creamos un bucle para usar los valores del mapa */
+    @each $red, $color in $redes {
+        .fa-#{$red} {
+            color: $color;
+        }
     }
 }
 

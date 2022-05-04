@@ -1,12 +1,25 @@
+
+// Definimos el extends botonTexto
+.botonTexto {
+    text-decoration:none;
+    font-size:14px;
+}
+
+// Definimos un mixins
+
+@mixin dimensiones ($width, $height) {
+    height: $height;
+	width: $width;
+}
+
 header {
-    width: 100%;
-    height: 40px;
+
+    @include dimensiones(100%, 40px);
     background-color: $colorPrincipal;
 
     a{
-        text-decoration:none;
+        @extend .botonTexto;
         color:inherit;
-        font-size:14px;
         &:hover{
             color:#fff;
         }

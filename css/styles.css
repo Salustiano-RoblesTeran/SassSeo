@@ -3,14 +3,16 @@
   margin: 0;
   padding: 0; }
 
+.botonTexto, header a, a {
+  text-decoration: none;
+  font-size: 14px; }
+
 header {
-  width: 100%;
   height: 40px;
+  width: 100%;
   background-color: #303030; }
   header a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 14px; }
+    color: inherit; }
     header a:hover {
       color: #fff; }
 
@@ -24,12 +26,15 @@ nav {
     color: #d6d6d6; }
 
 footer {
+  display: flex;
   position: fixed;
+  justify-content: space-between;
   left: 0px;
   bottom: 0px;
-  height: 14s0px;
+  height: 140px;
   width: 100%;
-  background: #f5f5f7; }
+  background: #f5f5f7;
+  /* Creamos un bucle para usar los valores del mapa */ }
   footer li {
     list-style: none;
     padding: 5px; }
@@ -37,21 +42,35 @@ footer {
       color: #303030;
       font-size: 12px; }
   footer p {
+    display: flex;
+    align-items: flex-end;
     text-align: center;
     margin-bottom: 15px; }
   footer .formulario {
-    display: relative;
+    display: flex;
+    align-items: center;
     left: 10px; }
   footer input {
     margin-left: 20px;
-    width: 200px;
-    height: 40px; }
-  footer button {
-    width: 100px;
     height: 40px;
+    width: 200px; }
+  footer button {
+    height: 40px;
+    width: 100px;
     background-color: #fff;
     border: 1px solid #303030;
     border-radius: 10px; }
+  footer .social {
+    display: flex;
+    margin: auto; }
+  footer .social i {
+    padding: 10px; }
+  footer .fa-twitter {
+    color: #55ACEE; }
+  footer .fa-facebook {
+    color: #3A5795; }
+  footer .fa-instagram {
+    color: #ee784c; }
 
 .subnav {
   background-color: #fbfbfd; }
@@ -72,10 +91,8 @@ h2 {
   color: #f56200;
   margin-top: 100px; }
 
-a {
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+a:hover {
+  text-decoration: underline; }
 
 img {
   width: 460px;

@@ -38,7 +38,8 @@ h2 {
 }
 
 a {
-    text-decoration: none;
+    // Usamos el extend
+    @extend .botonTexto;
     &:hover {
         text-decoration:underline;
     }
